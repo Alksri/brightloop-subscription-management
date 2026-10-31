@@ -20,6 +20,10 @@ npm run build
 npm run preview
 ```
 
+## Deploy on Render
+
+The repository includes a Render Blueprint in `render.yaml`. After connecting your Render account to this private GitHub repository, create the static site from the blueprint. Render builds with `npm ci && npm run build`, publishes `dist`, and rewrites app routes to `index.html`.
+
 ## Current deployment and data limitations
 
 The UI can be statically hosted, but the current app is still a demo: authentication and business records are stored in the browser, and Gemini requests use a Vite development-only server endpoint. Production Gemini insights, shared cloud data/auth, password reset delivery, and payment processing are not configured. Do not use real customer data or credentials until production services and authorization are implemented.
