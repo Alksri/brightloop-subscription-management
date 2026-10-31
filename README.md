@@ -22,7 +22,9 @@ npm run preview
 
 ## Deploy on Render
 
-The repository includes a Render Blueprint in `render.yaml`. After connecting your Render account to this private GitHub repository, create the static site from the blueprint. Render builds with `npm ci && npm run build`, publishes `dist`, and rewrites app routes to `index.html`.
+The repository includes a Render Blueprint in `render.yaml`. Connect your Render account to the public GitHub repository and create the static site from the blueprint. Render builds with `npm ci && npm run build`, publishes `dist`, and rewrites app routes to `index.html`.
+
+Live site: https://brightloop-7ejv.onrender.com/
 
 ## Current deployment and data limitations
 
